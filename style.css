@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+/* リセットスタイル */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* 全体のスタイル */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #000000;
+}
+
+body {
+    background-image: url(https://physical-i.jp/wp-content/uploads/2020/02/SC2020226145412.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* ナビゲーション */
+nav {
+    background-color: #3b3f77;
+    padding: 10px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.nav-list li a {
+    color: #fff;
+
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-list li a:hover {
+    color: #ccc;
+}
+
+/* ヒーローセクション */
+.hero {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+
+
+.hoge {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 100px;
+}
+
+
+
+
+.hoge:focus {
+    border: 2px solid #0000ff;
+    outline: 0;
+}
+
+::placeholder {
+    font-size: 50px;
+    text-align: center;
+  }
+
+.hoge2 {
+    position: relative;
+    text-align: center;
+    /* 中央揃え */
+    display: block;
+    margin: 0 auto;
+    /* 幅の指定 */
+    width: 100%;
+    max-width: 200px;
+    box-sizing: border-box;
+    padding: 10px;
+    /* 色の指定 */
+    background: linear-gradient(135deg, #ffd900, #ff9300);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+    border: 2px solid #000000a4;
+    background: #fff;
+    color: #34bb2595;
+
+}
+
+.hoge2:hover {
+    background: #34bb2595;
+    color: #fff;
+}
+
+.input:active,
+.input:focus {
+    top: 2px;
+}
+
+audio {
+    margin-left: 30%;
+    margin-right: auto;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.card {
+    width: 200px;
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card img {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+
+/* フッター */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}

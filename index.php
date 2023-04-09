@@ -2,21 +2,38 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:url" content=" ページの URL" />
     <meta property="og:type" content=" website" />
     <meta property="og:title" content=" ❤︎ずんだもんちゃん達の読み上げアプリ❤︎" />
-    <meta property="og:description" content=" 自分で書いた文章を読み上げて欲しいときにはここ！かわいいかわいいずんだもんちゃんたちがあなたの文章を読み上げてくれます。あんなことやこんなことを読み上げてもらうのもいいですね、、、。" />
-    <meta property="og:site_name" content="❤︎ずんだもんちゃん達の読み上げアプリ❤︎" />
+    <meta property="og:description" content=" 書いた文章をずんだもんちゃんたちが読み上げてくれます。あんなことやこんなことを読み上げてもらうのもいいですね、、、。" />
+    <meta property="og:site_name" content="VOICEVOXの読み上げアプリ" />
     <meta property="og:image" content=" https://zunko.jp/sozai/zundamon_s/zzs_zunmon001.png" />
-    <title>❤︎ずんだもんちゃん達の読み上げアプリ❤︎</title>
+    <title>DDDSpeaker</title>
 </head>
 
 <body>
+    <!-- ヘッダー -->
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Speaker</a></li>
+                <li><a href="#">General</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>DDD SPEAKER</h1>
+            <h2>by VOICEVOX</h2>
+        </div>
+    </header>
+
+    <!-- 話者選択ボタン -->
     <form action="" method="post">
-        <p>話者を選択してね(⋈◍＞◡＜◍)。✧♡<br />
+        <h3>話者を選択してね (⋈◍＞◡＜◍)。✧♡
             <select name="speaker">
                 <?php
                 $url = 'http://127.0.0.1:50021/speakers';
@@ -42,13 +59,16 @@
                 };
                 ?>
             </select>
-        </p>
-        <textarea name="text">
-読み上げ文字
-        </textarea>
-        <input type="submit" value="読み上げ">
-    </form>
+        </h3>
 
+        <!-- テキストエリア -->
+
+        <input type="text" name="text" placeholder="よーこそ！" class="hoge" required>
+        <br>
+        <!-- 読み上げボタン -->
+        <input type="submit" value="読み上げ" class="hoge2">
+    </form>
+    <br>
     <?php
     if (!isset($_POST["text"])) {
         echo "未選択";
@@ -79,6 +99,39 @@
         echo '</audio>';
     };
     ?>
+
+    <main>
+        <section class="cards">
+            <div class="card">
+                <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/W/Windymelt/20230118/20230118025814.png" alt="ずんだもん1">
+                <h2>What's VOICEVOX?</h2>
+                <p>
+                    <href><a href="#">VOICEVOXのリンク</a></href>
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="https://gyazo.com/661e7b192527050aa893bca34a6154a2/max_size/400" alt="ずんだもん1">
+                <h2>Let's Speak!</h2>
+                <p>
+                    <href><a href="#">読み上げリンク</a></href>
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4YiUwaAtfERfgKGk7vZ-f9QPg14FWFf2VVQ&usqp=CAU" alt="ずんだもん1">
+                <h2>zzz...</h2>
+                <p>
+                    <a href="#">zzz...</a>
+                </p>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 tenon-nonet. All rights reserved.</p>
+    </footer>
+
 </body>
 
 </html>

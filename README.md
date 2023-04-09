@@ -48,5 +48,3 @@ VOICEVOXを起動した状態で実行してください
 本レポジトリは学習目的であり、商標利用及び改変は許可します
 
 詳細はMIT Licenseをご覧ください
-
-"DDDSpeaker" is Confidential.

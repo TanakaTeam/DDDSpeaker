@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:url" content=" ページの URL" />
-    <meta property="og:type" content=" website" />
-    <meta property="og:title" content=" ❤︎ずんだもんちゃん達の読み上げアプリ❤︎" />
-    <meta property="og:description" content=" 自分で書いた文章を読み上げて欲しいときにはここ！かわいいかわいいずんだもんちゃんたちがあなたの文章を読み上げてくれます。あんなことやこんなことを読み上げてもらうのもいいですね、、、。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="❤︎ずんだもんちゃん達の読み上げアプリ❤︎" />
+    <meta property="og:description" content="自分で書いた文章を読み上げて欲しいときにはここ！かわいいかわいいずんだもんちゃんたちがあなたの文章を読み上げてくれます。あんなことやこんなことを読み上げてもらうのもいいですね、、、。" />
     <meta property="og:site_name" content="❤︎ずんだもんちゃん達の読み上げアプリ❤︎" />
     <meta property="og:image" content=" https://zunko.jp/sozai/zundamon_s/zzs_zunmon001.png" />
     <title>❤︎ずんだもんちゃん達の読み上げアプリ❤︎</title>

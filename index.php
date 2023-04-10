@@ -47,12 +47,18 @@
                 $data = json_decode($raw_data, true);
                 for ($i = 0; $i < count($data); $i++) {
                     for ($j = 0; $j < count($data[$i]["styles"]); $j++) {
-                        if ($data[$i]["styles"][$j]["id"] == $_POST["speaker"]) {
+                        if ($data[$i]["styles"][$j]["id"] == isset($_POST["speaker"])) {
                             //POSTにあるspeakerと一致してたらそれを選択済みにしておく(selectedを追加して書いておく)
                             echo "<option value=" . $data[$i]["styles"][$j]["id"] . " selected >" . $data[$i]["name"] . " " . $data[$i]["styles"][$j]["name"] . "</option>";
                         } else {
+                            // 何もPOSTされてない場合はずんだもんノーマルをselected
+                            if(!isset($_POST["speaker"]) && $data[$i]["styles"][$j]["id"] == 3){
+                                echo "<option value=" . $data[$i]["styles"][$j]["id"] . " selected >". $data[$i]["name"] . " " . $data[$i]["styles"][$j]["name"] . "</option>";
+                            }else{
                             //違う場合はそのまま
                             echo "<option value=" . $data[$i]["styles"][$j]["id"] . ">" . $data[$i]["name"] . " " . $data[$i]["styles"][$j]["name"] . "</option>";
+                            };
+                            
                         };
                     };
                 };

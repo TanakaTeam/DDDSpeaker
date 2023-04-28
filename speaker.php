@@ -68,10 +68,10 @@
         </h3>
 
         <!-- テキストエリア -->
-            <input type="text" name="text" placeholder="こんちくわなのだ！" class="hoge" required>
-            <div class="speakerZunda">
+        <input type="text" name="text" placeholder="こんちくわなのだ！" class="hoge" required>
+        <div class="speakerZunda">
             <img src="https://gyazo.com/661e7b192527050aa893bca34a6154a2/max_size/400" alt="ずんだもん1">
-            </div>
+        </div>
         <br>
         <!-- 読み上げボタン -->
         <input type="submit" value="読み上げ" class="hoge2">

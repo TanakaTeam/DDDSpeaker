@@ -34,10 +34,10 @@
     <div>
         <h3>・Other App・</h3>
         <ul class="otherApp-list">
-                <li><a href="#">他のアプリのリンク１</a></li>
-                <li><a href="#">他のアプリのリンク２</a></li>
-                <li><a href="#">他のアプリのリンク３</a></li>
-            </ul>
+            <li><a href="#">他のアプリのリンク１</a></li>
+            <li><a href="#">他のアプリのリンク２</a></li>
+            <li><a href="#">他のアプリのリンク３</a></li>
+        </ul>
     </div>
 
     <div class="otherAppZunda">

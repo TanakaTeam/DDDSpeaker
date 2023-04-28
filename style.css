@@ -103,7 +103,7 @@ h3 {
 ::placeholder {
     font-size: 50px;
     text-align: center;
-  }
+}
 
 .hoge2 {
     position: relative;
@@ -178,14 +178,14 @@ audio {
     max-width: 200px;
     height: auto;
     margin-bottom: 10px;
-};
+}
 
-/* Speakerページの画像 */
+/* otherAppZundaページの画像 */
 .otherAppZunda img {
     max-width: 200px;
     height: 100px;
     margin-bottom: 10px;
-};
+}
 
 /* フッター */
 footer {
@@ -194,4 +194,3 @@ footer {
     text-align: center;
     padding: 20px;
 }
-

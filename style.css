@@ -173,6 +173,19 @@ audio {
     font-size: 16px;
 }
 
+/* Speakerページの画像 */
+.speakerZunda img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+};
+
+/* Speakerページの画像 */
+.otherAppZunda img {
+    max-width: 200px;
+    height: 100px;
+    margin-bottom: 10px;
+};
 
 /* フッター */
 footer {
@@ -181,3 +194,4 @@ footer {
     text-align: center;
     padding: 20px;
 }
+

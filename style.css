@@ -25,9 +25,11 @@ body {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #464646;
 }
 
-/* ナビゲーション */
+/* 上タブ */
 nav {
     background-color: #3b3f77;
     padding: 10px;
@@ -50,11 +52,8 @@ nav {
     color: #ccc;
 }
 
-/* ヒーローセクション */
+/* タイトル DDDSpeaker byVOICEVOX */
 .hero {
-    background-image: url('hero.jpg');
-    background-size: cover;
-    background-position: center;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -62,7 +61,6 @@ nav {
     align-items: center;
     text-align: center;
     color: #fff;
-    padding: 20px;
 }
 
 .hero h1 {
@@ -83,17 +81,15 @@ h3 {
 }
 
 
-
+/* テキストボックス */
 .hoge {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
     height: 100px;
+    font-size: 25px;
 }
-
-
-
 
 .hoge:focus {
     border: 2px solid #0000ff;
@@ -101,16 +97,17 @@ h3 {
 }
 
 ::placeholder {
-    font-size: 50px;
-    text-align: center;
+    font-size: 25px;
+    text-align: left;
 }
 
+/* 読み上げボタン */
 .hoge2 {
-    position: relative;
+    position: center;
     text-align: center;
     /* 中央揃え */
     display: block;
-    margin: 0 auto;
+    margin: auto;
     /* 幅の指定 */
     width: 100%;
     max-width: 200px;
@@ -138,11 +135,7 @@ h3 {
     top: 2px;
 }
 
-audio {
-    margin-left: 30%;
-    margin-right: auto;
-}
-
+/* indexのカード */
 .cards {
     display: flex;
     justify-content: space-around;
@@ -150,7 +143,7 @@ audio {
 }
 
 .card {
-    width: 200px;
+    width: auto;
     background-color: #f4f4f4;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -159,7 +152,7 @@ audio {
 }
 
 .card img {
-    max-width: 50%;
+    max-width: 200px;
     height: auto;
     margin-bottom: 10px;
 }
@@ -173,22 +166,43 @@ audio {
     font-size: 16px;
 }
 
+
+
+/* 音声調整ボタン （わからん！）*/
+/* .audio {
+    float: right;
+} */
+
 /* Speakerページの画像 */
 .speakerZunda img {
+    float: right;
     max-width: 200px;
-    height: auto;
-    margin-bottom: 10px;
 }
 
 /* otherAppZundaページの画像 */
 .otherAppZunda img {
-    max-width: 200px;
-    height: 100px;
+    max-width: 300px;
+    height: 300px;
     margin-bottom: 10px;
+}
+
+/* otherApp */
+.otherApp-list {
+    font-size: 25px;
+    text-align: center;
+}
+
+.hero2 h3{
+    font-size: 40px;
 }
 
 /* フッター */
 footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
     background-color: #333;
     color: #fff;
     text-align: center;

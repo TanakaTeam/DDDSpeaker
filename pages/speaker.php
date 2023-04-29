@@ -2,7 +2,7 @@
 <html lang="ja">
 
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,9 +21,9 @@
     <header>
         <nav>
             <ul class="nav-list">
-                <li><a href="index.php">Home</a></li>
+                <li><a href="../index.php">Home</a></li>
                 <li><a href="speaker.php">Speaker</a></li>
-                <li><a href="otherApp.php">Other App</a></li>
+                <li><a href="../pages/otherApp.php">Other App</a></li>
             </ul>
         </nav>
         <div class="hero">
@@ -76,10 +76,12 @@
         <!-- 読み上げボタン -->
         <input type="submit" value="読み上げ" class="hoge2">
     </form>
+
     <br>
+
     <?php
     if (!isset($_POST["text"])) {
-        echo "未選択";
+        echo "話者を選んでね！";
     } else {
         $query_url = 'http://127.0.0.1:50021/audio_query?text=' . urlencode('"' . $_POST["text"] . '"') . "&speaker=" . $_POST["speaker"];
         $query_options = array(
@@ -107,7 +109,6 @@
         echo '</audio>';
     };
     ?>
-
 
     <footer>
         <p>&copy; 2023 TanakaTeam. All rights reserved.</p>

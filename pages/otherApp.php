@@ -1,7 +1,7 @@
 <html lang="ja">
 
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,8 +20,8 @@
     <header>
         <nav>
             <ul class="nav-list">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="speaker.php">Speaker</a></li>
+                <li><a href="../index.php">Home</a></li>
+                <li><a href="../pages/speaker.php">Speaker</a></li>
                 <li><a href="otherApp.php">Other App</a></li>
             </ul>
         </nav>
@@ -31,10 +31,10 @@
         </div>
     </header>
 
-    <div>
+    <div class="hero2">
         <h3>・Other App・</h3>
         <ul class="otherApp-list">
-            <li><a href="#">他のアプリのリンク１</a></li>
+            <li><a href="http://localhost:8888/">SDPs Threads</a></li>
             <li><a href="#">他のアプリのリンク２</a></li>
             <li><a href="#">他のアプリのリンク３</a></li>
         </ul>

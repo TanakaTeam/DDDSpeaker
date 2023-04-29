@@ -21,8 +21,8 @@
         <nav>
             <ul class="nav-list">
                 <li><a href="index.php">Home</a></li>
-                <li><a href="speaker.php">Speaker</a></li>
-                <li><a href="otherApp.php">Other App</a></li>
+                <li><a href="../pages/speaker.php">Speaker</a></li>
+                <li><a href="../pages/otherApp.php">Other App</a></li>
             </ul>
         </nav>
         <div class="hero">
@@ -38,7 +38,7 @@
                 <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/W/Windymelt/20230118/20230118025814.png" alt="ずんだもん1">
                 <h2>What's VOICEVOX?</h2>
                 <p>
-                    <href><a href="#">VOICEVOXのリンク</a></href>
+                    <href><a href="https://voicevox.hiroshiba.jp/">VOICEVOXのリンク</a></href>
                 </p>
             </div>
 
@@ -46,7 +46,7 @@
                 <img src="https://gyazo.com/661e7b192527050aa893bca34a6154a2/max_size/400" alt="ずんだもん1">
                 <h2>Let's Speak!</h2>
                 <p>
-                    <href><a href="speaker.php">読み上げリンク</a></href>
+                    <href><a href="pages/speaker.php">読み上げリンク</a></href>
                 </p>
             </div>
 
@@ -54,7 +54,7 @@
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4YiUwaAtfERfgKGk7vZ-f9QPg14FWFf2VVQ&usqp=CAU" alt="ずんだもん1">
                 <h2>Other App!</h2>
                 <p>
-                    <a href="otherApp.php">他のアプリのページ</a>
+                    <a href="pages/otherApp.php">他のアプリのページ</a>
                 </p>
             </div>
 

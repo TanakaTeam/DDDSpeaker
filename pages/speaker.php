@@ -49,7 +49,7 @@
                 $data = json_decode($raw_data, true);
                 for ($i = 0; $i < count($data); $i++) {
                     for ($j = 0; $j < count($data[$i]["styles"]); $j++) {
-                        if ($data[$i]["styles"][$j]["id"] == isset($_POST["speaker"])) {
+                        if (isset($_POST["speaker"]) && $data[$i]["styles"][$j]["id"] == $_POST["speaker"]) {
                             //POSTにあるspeakerと一致してたらそれを選択済みにしておく(selectedを追加して書いておく)
                             echo "<option value=" . $data[$i]["styles"][$j]["id"] . " selected >" . $data[$i]["name"] . " " . $data[$i]["styles"][$j]["name"] . "</option>";
                         } else {
@@ -68,7 +68,7 @@
         </h3>
 
         <!-- テキストエリア -->
-        <input type="text" name="text" placeholder="こんちくわなのだ！" class="hoge" required>
+        <input type="text" name="text" placeholder="こんちくわなのだ！ここに読み上げてほしい文章を入力するのだ！" class="hoge" required>
         <div class="speakerZunda">
             <img src="https://gyazo.com/661e7b192527050aa893bca34a6154a2/max_size/400" alt="ずんだもん1">
         </div>
@@ -81,7 +81,7 @@
 
     <?php
     if (!isset($_POST["text"])) {
-        echo '<p class="warning-text">話者を選んでね！</p>';
+        echo '<p class="warning-text">リストから話者を選ぶのだ！</p>';
     } else {
         $query_url = 'http://127.0.0.1:50021/audio_query?text=' . urlencode('"' . $_POST["text"] . '"') . "&speaker=" . $_POST["speaker"];
         $query_options = array(
@@ -104,7 +104,7 @@
         );
         $synthesis_context = stream_context_create($synthesis_options);
         $synthesis_raw_data = file_get_contents($synthesis_url, false, $synthesis_context);
-        echo '<audio controls="controls" autobuffer="autobuffer" autoplay="autoplay">';
+        echo '<audio class="custom-audio "controls="controls" autobuffer="autobuffer" autoplay="autoplay">';
         echo '<source src="data:audio/wav;base64,' .  base64_encode($synthesis_raw_data) . '"/>';
         echo '</audio>';
     };

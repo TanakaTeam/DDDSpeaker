@@ -73,36 +73,19 @@ nav {
 }
 
 h3 {
-    font-size: 16px;
-    color: #fff;
+    font-size: 18px;
+    color: #1ea145;
     margin-bottom: 10px;
     text-align: center;
-
-}
-
-
-/* テキストボックス */
-.hoge {
+    background-color: #ffffff;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
-    height: 100px;
-    font-size: 25px;
+    width: 30%;
+    
 }
 
-.hoge:focus {
-    border: 2px solid #0000ff;
-    outline: 0;
-}
-
-::placeholder {
-    font-size: 25px;
-    text-align: left;
-}
-
-
-
+/* index.php */
 /* indexのカード */
 .cards {
     display: flex;
@@ -134,14 +117,48 @@ h3 {
     font-size: 16px;
 }
 
+/* speaker.php */
+/* テキストボックス */
+.hoge {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 100px;
+    font-size: 25px;
+}
+
+.hoge:focus {
+    border: 2px solid #0000ff;
+    outline: 0;
+}
+
+::placeholder {
+    font-size: 25px;
+    text-align: left;
+}
+
+
+/* 話者を選択警告文 */
+.warning-text {
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 8px;
+    transition: 0.3s;
+    border: 2px solid #000000a4;
+    background: #f35050;
+    color: #00000095;
+    float: right;
+    margin-right: 20px;
+
+}
 
 /* 読み上げボタン */
 .hoge2 {
-    position: center;
     text-align: center;
     /* 中央揃え */
     display: block;
-    margin: auto;
     /* 幅の指定 */
     width: 100%;
     max-width: 200px;
@@ -152,11 +169,12 @@ h3 {
     color: #fff;
     font-weight: bold;
     font-size: 30px;
-    border-radius: 8px;
+    border-radius: 10px;
     transition: 0.3s;
     border: 2px solid #000000a4;
     background: #fff;
-    color: #34bb2595;
+    color: #19a70995;
+    float: right;
 
 }
 
@@ -170,10 +188,13 @@ h3 {
     top: 2px;
 }
 
-/* 音声調整ボタン （わからん！）*/
-/* .audio {
+/* 音声調整ボタン */
+.custom-audio {
     float: right;
-} */
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
 
 /* Speakerページの画像 */
 .speakerZunda img {
@@ -181,6 +202,7 @@ h3 {
     max-width: 200px;
 }
 
+/* otherApp.php */
 /* otherAppZundaページの画像 */
 .otherAppZunda img {
     max-width: 300px;
@@ -204,6 +226,8 @@ h3 {
     /*左側の線*/
     background: #f1f8ff;
     /*背景色*/
+    margin-left: 20%;
+    margin-right: 20%;
     margin-bottom: 3px;
     /*下のバーとの余白*/
     line-height: 1.5;
@@ -228,27 +252,4 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px;
-}
-
-.warning-text {
-    color: rgb(3, 192, 19);
-    font-weight: bold;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    background-color: #ccc;
-    margin: auto;
-
-    color: #fff;
-    font-weight: bold;
-    font-size: 30px;
-    border-radius: 8px;
-    transition: 0.3s;
-    border: 2px solid #000000a4;
-    background: #fff;
-    color: #34bb2595;
-    float: right;
-
 }

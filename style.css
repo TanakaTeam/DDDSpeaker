@@ -72,7 +72,7 @@ nav {
     font-size: 20px;
 }
 
-h3 {
+.speakerSelect {
     font-size: 18px;
     color: #1ea145;
     margin-bottom: 10px;
@@ -203,6 +203,13 @@ h3 {
 }
 
 /* otherApp.php */
+/* otherAppTitle */
+.otherAppTitle {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #ffffff;
+}
+
 /* otherAppZundaページの画像 */
 .otherAppZunda img {
     max-width: 300px;

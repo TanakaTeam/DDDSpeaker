@@ -34,7 +34,7 @@
 
     <!-- 話者選択ボタン -->
     <form action="" method="post">
-        <h3>話者を選択してね (⋈◍＞◡＜◍)。✧♡
+        <h3 class="speakerSelect">話者を選択してね (⋈◍＞◡＜◍)。✧♡
             <select name="speaker">
                 <?php
                 $url = 'http://127.0.0.1:50021/speakers';

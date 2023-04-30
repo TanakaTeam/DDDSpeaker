@@ -32,7 +32,7 @@
     </header>
 
     <div class="hero2">
-        <h3>・Other App・</h3>
+        <h3 class="otherAppTitle">・Other App・</h3>
         <ul class="otherApp-list">
             <li><a href="http://localhost:8888/">SDPs Threads</a></li>
             <li><a href="#">他のアプリのリンク２</a></li>

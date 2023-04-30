@@ -81,7 +81,7 @@
 
     <?php
     if (!isset($_POST["text"])) {
-        echo "話者を選んでね！";
+        echo '<p class="warning-text">話者を選んでね！</p>';
     } else {
         $query_url = 'http://127.0.0.1:50021/audio_query?text=' . urlencode('"' . $_POST["text"] . '"') . "&speaker=" . $_POST["speaker"];
         $query_options = array(
@@ -109,6 +109,8 @@
         echo '</audio>';
     };
     ?>
+
+
 
     <footer>
         <p>&copy; 2023 TanakaTeam. All rights reserved.</p>

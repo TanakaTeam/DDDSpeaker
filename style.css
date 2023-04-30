@@ -101,39 +101,7 @@ h3 {
     text-align: left;
 }
 
-/* 読み上げボタン */
-.hoge2 {
-    position: center;
-    text-align: center;
-    /* 中央揃え */
-    display: block;
-    margin: auto;
-    /* 幅の指定 */
-    width: 100%;
-    max-width: 200px;
-    box-sizing: border-box;
-    padding: 10px;
-    /* 色の指定 */
-    background: linear-gradient(135deg, #ffd900, #ff9300);
-    color: #fff;
-    font-weight: bold;
-    border-radius: 8px;
-    transition: 0.3s;
-    border: 2px solid #000000a4;
-    background: #fff;
-    color: #34bb2595;
 
-}
-
-.hoge2:hover {
-    background: #34bb2595;
-    color: #fff;
-}
-
-.input:active,
-.input:focus {
-    top: 2px;
-}
 
 /* indexのカード */
 .cards {
@@ -167,6 +135,40 @@ h3 {
 }
 
 
+/* 読み上げボタン */
+.hoge2 {
+    position: center;
+    text-align: center;
+    /* 中央揃え */
+    display: block;
+    margin: auto;
+    /* 幅の指定 */
+    width: 100%;
+    max-width: 200px;
+    box-sizing: border-box;
+    padding: 10px;
+    /* 色の指定 */
+    background: linear-gradient(135deg, #ffd900, #ff9300);
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 8px;
+    transition: 0.3s;
+    border: 2px solid #000000a4;
+    background: #fff;
+    color: #34bb2595;
+
+}
+
+.hoge2:hover {
+    background: #34bb2595;
+    color: #fff;
+}
+
+.input:active,
+.input:focus {
+    top: 2px;
+}
 
 /* 音声調整ボタン （わからん！）*/
 /* .audio {
@@ -183,16 +185,35 @@ h3 {
 .otherAppZunda img {
     max-width: 300px;
     height: 300px;
-    margin-bottom: 10px;
+    margin-bottom: auto;
+    margin-left: auto;
+
 }
 
 /* otherApp */
 .otherApp-list {
     font-size: 25px;
     text-align: center;
+
+    padding: 0;
+    position: relative;
+
+    color: #2d8fdd;
+    border-left: solid 30px #2d8fdd;
+    border-right: solid 30px #2d8fdd;
+    /*左側の線*/
+    background: #f1f8ff;
+    /*背景色*/
+    margin-bottom: 3px;
+    /*下のバーとの余白*/
+    line-height: 1.5;
+    padding: 0.5em;
+    list-style-type: none !important;
+    /*ポチ消す*/
+
 }
 
-.hero2 h3{
+.hero2 h3 {
     font-size: 40px;
 }
 
@@ -202,9 +223,32 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    
+
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px;
+}
+
+.warning-text {
+    color: rgb(3, 192, 19);
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #ccc;
+    margin: auto;
+
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 8px;
+    transition: 0.3s;
+    border: 2px solid #000000a4;
+    background: #fff;
+    color: #34bb2595;
+    float: right;
+
 }

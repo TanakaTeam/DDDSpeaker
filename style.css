@@ -1,0 +1,262 @@
+@charset "utf-8";
+
+/* リセットスタイル */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* 全体のスタイル */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #000000;
+}
+
+body {
+    background-image: url(https://physical-i.jp/wp-content/uploads/2020/02/SC2020226145412.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #464646;
+}
+
+/* 上タブ */
+nav {
+    background-color: #3b3f77;
+    padding: 10px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.nav-list li a {
+    color: #fff;
+
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-list li a:hover {
+    color: #ccc;
+}
+
+/* タイトル DDDSpeaker byVOICEVOX */
+.hero {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.speakerSelect {
+    font-size: 18px;
+    color: #1ea145;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #ffffff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    
+}
+
+/* index.php */
+/* indexのカード */
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.card {
+    width: auto;
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+/* speaker.php */
+/* テキストボックス */
+.hoge {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 100px;
+    font-size: 25px;
+}
+
+.hoge:focus {
+    border: 2px solid #0000ff;
+    outline: 0;
+}
+
+::placeholder {
+    font-size: 25px;
+    text-align: left;
+}
+
+
+/* 話者を選択警告文 */
+.warning-text {
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 8px;
+    transition: 0.3s;
+    border: 2px solid #000000a4;
+    background: #f35050;
+    color: #00000095;
+    float: right;
+    margin-right: 20px;
+
+}
+
+/* 読み上げボタン */
+.hoge2 {
+    text-align: center;
+    /* 中央揃え */
+    display: block;
+    /* 幅の指定 */
+    width: 100%;
+    max-width: 200px;
+    box-sizing: border-box;
+    padding: 10px;
+    /* 色の指定 */
+    background: linear-gradient(135deg, #ffd900, #ff9300);
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 10px;
+    transition: 0.3s;
+    border: 2px solid #000000a4;
+    background: #fff;
+    color: #19a70995;
+    float: right;
+
+}
+
+.hoge2:hover {
+    background: #34bb2595;
+    color: #fff;
+}
+
+.input:active,
+.input:focus {
+    top: 2px;
+}
+
+/* 音声調整ボタン */
+.custom-audio {
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* Speakerページの画像 */
+.speakerZunda img {
+    float: right;
+    max-width: 200px;
+}
+
+/* otherApp.php */
+/* otherAppTitle */
+.otherAppTitle {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* otherAppZundaページの画像 */
+.otherAppZunda img {
+    max-width: 300px;
+    height: 300px;
+    margin-bottom: auto;
+    margin-left: auto;
+
+}
+
+/* otherApp */
+.otherApp-list {
+    font-size: 25px;
+    text-align: center;
+
+    padding: 0;
+    position: relative;
+
+    color: #2d8fdd;
+    border-left: solid 30px #2d8fdd;
+    border-right: solid 30px #2d8fdd;
+    /*左側の線*/
+    background: #f1f8ff;
+    /*背景色*/
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 3px;
+    /*下のバーとの余白*/
+    line-height: 1.5;
+    padding: 0.5em;
+    list-style-type: none !important;
+    /*ポチ消す*/
+
+}
+
+.hero2 h3 {
+    font-size: 40px;
+}
+
+/* フッター */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}

@@ -51,7 +51,7 @@
             </div>
 
             <div class="card">
-                <img src="https://o.remove.bg/downloads/50065fac-d776-4e49-8c92-f2208f79b7af/images-removebg-preview.png" alt="ずんだもん1">
+                <img src="https://nonet3.files.wordpress.com/2023/05/images-removebg-preview-1.png?w=225" alt="ずんだもん1">
                 <h2>Other App!</h2>
                 <p>
                     <a href="pages/otherApp.php">他のアプリのページ</a>

@@ -34,9 +34,9 @@
     <div class="hero2">
         <h3 class="otherAppTitle">・Other App・</h3>
         <ul class="otherApp-list">
-            <li><a href="http://localhost:8888/">SDPs Threads</a></li>
-            <li><a href="#">他のアプリのリンク２</a></li>
-            <li><a href="#">他のアプリのリンク３</a></li>
+            <li><a href="https://tenon-nonet.com/">HOMEPage</a></li>
+            <li><a href="https://threads.tenon-nonet.com/">SDPsThreads</a></li>
+            <li><a href="">DDDquize</a></li>
         </ul>
     </div>
 

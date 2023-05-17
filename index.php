@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleSmart.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
     <meta property="og:description" content=" 書いた文章をずんだもんちゃんたちが読み上げてくれます。あんなことやこんなことを読み上げてもらうのもいいですね、、、。" />
     <meta property="og:site_name" content="VOICEVOXの読み上げアプリ" />
     <meta property="og:image" content=" https://zunko.jp/sozai/zundamon_s/zzs_zunmon001.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <title>DDDSpeaker</title>
 </head>
 
@@ -65,5 +67,7 @@
     </footer>
 
 </body>
+
+
 
 </html>

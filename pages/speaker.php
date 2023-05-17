@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styleSmart.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,7 +36,7 @@
     <!-- 話者選択ボタン -->
     <form action="" method="post">
         <h3 class="speakerSelect">話者を選択してね (⋈◍＞◡＜◍)。✧♡
-            <select name="speaker">
+            <select class="speakerSelectButton" name="speaker">
                 <?php
                 $url = 'http://127.0.0.1:50021/speakers';
                 $options = array(

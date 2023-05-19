@@ -216,7 +216,8 @@ nav {
     height: 300px;
     margin-bottom: auto;
     margin-left: auto;
-
+    position: fixed;
+    bottom: 70px;
 }
 
 /* otherApp */

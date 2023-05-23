@@ -1,0 +1,239 @@
+@media screen and (max-width: 480px) {
+
+    /* 480px以下に適用されるCSS（スマホ用） */
+
+    /* 全ページ共通 */
+    /* 上タブ */
+    nav {
+        background-color: #3b3f77;
+        padding: 3px;
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+
+    .nav-list li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+    .nav-list li a:hover {
+        color: #ccc;
+    }
+
+    /* タイトル DDDSpeaker byVOICEVOX */
+    .hero {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+        margin-bottom: 0px;
+    }
+
+    .hero h2 {
+        font-size: 15px;
+    }
+
+    /* フッター */
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    /* home */
+    /* homeのカード */
+    .cards {
+        display: grid;
+        justify-content: space-around;
+        margin: 0px 0;
+    }
+
+    .card {
+        width: auto;
+        background-color: #f4f4f4;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .card img {
+        max-width: 150px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .card h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+
+    /* speaker page */
+    /* 話者選択ボタン */
+    .speakerSelect {
+        font-size: 8px;
+        width: 200px;
+        padding-top: 20px;
+        color: rgb(255, 255, 255);
+        background-color: transparent;
+    }
+
+    .speakerSelectButton {
+        width: 200px;
+        font-size: 10px;
+    }
+
+    .name {
+        width: 200px;
+    }
+
+    /* 読み上げボタン */
+    .hoge2 {
+        text-align: center;
+        /* 中央揃え */
+        display: block;
+        /* 幅の指定 */
+        width: 100%;
+        max-width: 200px;
+        box-sizing: border-box;
+        margin-right: 15px;
+        /* 色の指定 */
+        background: linear-gradient(135deg, #ffd900, #ff9300);
+        color: #fff;
+        font-weight: bold;
+        font-size: 30px;
+        border-radius: 5px;
+        transition: 0.5s;
+        border: 2px solid #19a70995;
+        background: #fff;
+        color: #19a70995;
+        float: right;
+    }
+
+    .hoge2:hover {
+        background: #34bb2595;
+        color: #fff;
+    }
+
+    .input:active,
+    .input:focus {
+        top: 2px;
+    }
+
+    /* 音声調整ボタン */
+    .custom-audio {
+        float: right;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* Speakerページの画像 */
+    .speakerZunda img {
+        float: right;
+        max-width: 100px;
+        padding-right: 10px;
+    }
+
+    /* 話者を選択警告文 */
+    .warning-text {
+        color: #fff;
+        font-weight: bold;
+        font-size: 15px;
+        border-radius: 5px;
+        transition: 0.5s;
+        border: 3px solid #ff5353a4;
+        color: #ffffff;
+        margin-top: 3px;
+        margin-right: 110px;
+    }
+
+    /* テキストボックス */
+    .hoge {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        width: 80%;
+        height: 100px;
+        font-size: 15px;
+    }
+
+    .hoge:focus {
+        border: 2px solid #0000ff;
+        outline: 0;
+    }
+
+    ::placeholder {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    /* otherApp.php */
+    /* otherAppTitle */
+    .hero2 h3 {
+        margin-bottom: 10px;
+        font-size: 20px;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    /* otherApp */
+    .otherApp-list {
+        font-size: 25px;
+        text-align: center;
+        padding: 0;
+        position: relative;
+
+        color: #2d8fdd;
+        border-left: solid 5px #34bb2595;
+        border-right: solid 5px #34bb2595;
+        /*左側の線*/
+        background: #f1f8ff;
+        /*背景色*/
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 3px;
+        /*下のバーとの余白*/
+        line-height: 1.5;
+        padding: 0.5em;
+        list-style-type: none !important;
+        /*ポチ消す*/
+    }
+
+    .hero2 ul {
+        font-size: 10px;
+    }
+
+    /* otherAppZundaページの画像 */
+    .otherAppZunda img {
+        height: 150px;
+        margin-bottom: auto;
+        margin-left: auto;
+        position: fixed;
+        bottom: 35px;
+    }
+
+}

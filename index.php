@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleSmart.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
     <meta property="og:description" content=" 書いた文章をずんだもんちゃんたちが読み上げてくれます。あんなことやこんなことを読み上げてもらうのもいいですね、、、。" />
     <meta property="og:site_name" content="VOICEVOXの読み上げアプリ" />
     <meta property="og:image" content=" https://zunko.jp/sozai/zundamon_s/zzs_zunmon001.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <title>DDDSpeaker</title>
 </head>
 
@@ -51,7 +53,7 @@
             </div>
 
             <div class="card">
-                <img src="https://o.remove.bg/downloads/50065fac-d776-4e49-8c92-f2208f79b7af/images-removebg-preview.png" alt="ずんだもん1">
+                <img src="https://nonet3.files.wordpress.com/2023/05/images-removebg-preview-1.png?w=225" alt="ずんだもん1">
                 <h2>Other App!</h2>
                 <p>
                     <a href="pages/otherApp.php">他のアプリのページ</a>
@@ -65,5 +67,7 @@
     </footer>
 
 </body>
+
+
 
 </html>
